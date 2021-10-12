@@ -3,3 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.inner-container {
+  display: flex;
+  align-items: center;
+}
+
+.inner-container span {
+  margin: 0 10px;
+}

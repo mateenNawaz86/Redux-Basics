@@ -42,17 +42,6 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/about" ? "active" : ""
-                  }`}
-                  aria-current="page"
-                  to="/about"
-                >
-                  About
-                </Link>
-              </li>
             </ul>
             <form className="d-flex">
               <button className="btn btn-primary">Your balance: 0 </button>
