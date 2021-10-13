@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -8,6 +9,8 @@ const Header = () => {
 
   const location = useLocation();
 
+  const amount = useSelector((state) => state.amount);
+  
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,7 +47,9 @@ const Header = () => {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-primary">Your balance: 0 </button>
+              <button className="btn btn-primary">
+                Your balance: {amount}
+              </button>
             </form>
           </div>
         </div>
